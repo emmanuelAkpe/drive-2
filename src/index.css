@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+
+input:focus,
+select:focus {
+  @apply focus:ring-oya-ghana-green;
+}
+
+.trans {
+  @apply transition duration-500 ease-in-out;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@layer base {
+  html {
+    font-family: Archivo;
+  }
+}
+
+/* Custom Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb,
+.member--info::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c8baba;
+  margin: 0 1px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}

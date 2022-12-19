@@ -1,0 +1,25 @@
+#Web {
+    header {
+        padding: 95px 0 0;
+        background-color: #FCF5F5 !important;
+
+        .left {
+            padding: 120px;
+        }
+
+        .img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('/assets/img/web.png');
+        }
+    }
+
+    #travellers {
+        .comment {
+            background-color: #F5F8FA;
+            min-height: 150px;
+            padding: 25px;
+        }
+    }
+}

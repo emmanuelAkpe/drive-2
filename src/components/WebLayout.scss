@@ -1,0 +1,9 @@
+@import '../assets/scss/variables.scss';
+
+.WebLayout {
+    footer {
+        color: $primary;
+        font-weight: 500;
+        border-bottom: 8px solid $primary;
+    }
+}

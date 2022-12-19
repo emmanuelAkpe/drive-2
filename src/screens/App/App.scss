@@ -1,0 +1,183 @@
+@import '../../assets/scss/variables.scss';
+
+#Dashboard,
+#AppTickets,
+#AppHirings {
+  .round-icon {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    background-color: rgba($primary, 0.3);
+  }
+
+  .card {
+    border: 1px solid rgba($primary, 0.2);
+  }
+}
+
+#AppBuyTicket {
+  .step {
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active,
+    &:hover {
+      background-color: rgb(7, 150, 105, 0.1);
+      border-right: solid 5px green;
+    }
+  }
+
+  .bus {
+    padding: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #aeb0b1;
+
+    .ant-radio {
+      display: none;
+    }
+
+    &.ant-radio-wrapper-checked,
+    &:hover {
+      background-color: rgba($primary, 0.1);
+    }
+  }
+
+  .section-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgba($primary, 0.4);
+  }
+
+  // target user
+  .target_person {
+    width: 14rem !important;
+    height: 2.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #aeb0b1;
+
+    .ant-radio {
+      border: 5px solid #aeb0b1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-radio-inner {
+      display: block;
+      background-color: white;
+    }
+
+    .ant-radio-inner:before {
+      background-color: #079669;
+      width: 20px !important;
+      height: 20px;
+      content: '';
+      border-radius: 50%;
+    }
+
+    &.ant-radio-wrapper-checked,
+    &:hover {
+      // background-color: rgba($primary, 0.1);
+      border-color: #079669;
+
+      .ant-radio {
+        border: 5px solid #079669;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ant-radio-inner::after {
+          background-color: white;
+        }
+      }
+      h4 {
+        color: #079669;
+      }
+    }
+  }
+
+  // Pickup radio
+  .pickup__radio {
+    .ant-radio {
+      border: 5px solid #aeb0b1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-radio-inner {
+      display: block;
+      background-color: white;
+    }
+
+    &.ant-radio-wrapper-checked,
+    &:hover {
+      // background-color: rgba($primary, 0.1);
+      border-color: #079669;
+
+      .ant-radio {
+        border: 5px solid #079669;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ant-radio-inner::after {
+          background-color: white;
+        }
+      }
+      h4 {
+        color: #079669;
+      }
+    }
+  }
+  .seatSelection {
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+
+    .ant-radio {
+      display: none;
+    }
+
+    &.ant-radio-wrapper-checked,
+    &:hover {
+      background-color: rgba($primary, 0.1);
+
+      .seat {
+        color: rgba($primary, 0.1);
+        fill: rgba($primary, 0.1);
+      }
+    }
+  }
+  .ant-checkbox-wrapper {
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+
+    .ant-checkbox {
+      display: none;
+    }
+
+    &.ant-checkbox-wrapper-checked,
+    &:hover {
+      background-color: rgba($primary, 0.1);
+
+      .seat {
+        color: rgba($primary, 0.1);
+        fill: rgba($primary, 0.1);
+      }
+    }
+  }
+}
